@@ -1,85 +1,52 @@
 <!DOCTYPE html>
-<!-- saved from url=(0042)http://127.0.0.1:5500/recipes/lasagna.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Lasagna Receipe</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>The Odin Project</title>
+    <link rel="stylesheet" href="../style.css">
   </head>
   <body>
-	<div = contorno>
-    <h1>Pizza Alfredo</h1>
-    <img src="../img/img_pizzas.webp" width="50%">
-    <h2>Descripción</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nostrum distinctio ducimus ex officia fugiat iusto totam dignissimos excepturi adipisci culpa deleniti iste sequi sunt, numquam vel cum voluptate consequuntur?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla provident eos quisquam ipsa repudiandae rerum cupiditate dolorum, omnis amet consectetur modi ad molestias animi qui, at nesciunt ab corrupti necessitatibus!</p>
-    
-    <h2>Ingredientes</h2>
-         
-    <ul>
-      <li>10 Langostinos</li>
-      <li>100 grs de Pan Rallado</li>
-      <li>3 Huevos</li>
-      <li>Sal a gusto</li>
-      <li>Pimienta a gusto</li>
-    </ul>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <h1>Pizza Alfredo</h1>
+		  <a href="/index.html">Back to menu</a>
+        </div>
+        <div class="col-10">
+          <img src="../img/img_pizzas.webp" width="50%" class="imgRound">
+          <h2>Descripción</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nostrum distinctio ducimus ex officia fugiat iusto totam dignissimos excepturi adipisci culpa deleniti iste sequi sunt, numquam vel cum voluptate consequuntur?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla provident eos quisquam ipsa repudiandae rerum cupiditate dolorum, omnis amet consectetur modi ad molestias animi qui, at nesciunt ab corrupti necessitatibus!</p>
+          <h3>Ingredientes</h3>
+          <ul>
+            <li>Harina</li>
+            <li>Agua</li>
+            <li>Aceite Oliva</li>
+            <li>Levadura</li>
+            <li>Sal a gusto</li>
+            <li>Pimienta a gusto</li>
+			<li>Muzzarella a gusto</li>
+          </ul>
+          <h3>Pasos</h3>
+          <ol>
+            <li>Limpiar los langostinos</li>
+            <li>Mezclar huevo con sal y pimienta</li>
+            <li>Meter los langostinos en el recipiente con el huevo</li>
+            <li>Pasar los langostinos por el pan rallado</li>
+            <li>Calentar el fuego a 230º</li>
+            <li>Fritar y secar</li>
+          </ol>
+ 
+        </div>
+      </div>
+    </div>
 
-    <h2>Pasos</h2>
-
-    <ol>
-      <li>Limpiar los langostinos</li>
-      <li>Mezclar huevo con sal y pimienta</li>
-      <li>Meter los langostinos en el recipiente con el huevo</li>
-      <li>Pasar los langostinos por el pan rallado</li>
-      <li>Calentar el fuego a 230º</li>
-      <li>Fritar y secar</li>
-    </ol>
-
-	<a href="/index.html">back to menu</a>	
-
+  </body>
   
-
-</div>
-
-    <script src="./The Lasagna Receipe_files/index.js"></script>
-  <!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-
-</body></html>
+</html>
